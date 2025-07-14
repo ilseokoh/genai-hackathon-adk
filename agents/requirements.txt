@@ -1,5 +1,5 @@
 # Google ADK latest version (v1.4.2 - production ready)
-google-adk>=1.4.2
+google-adk>=1.6.1
 
 # Google GenerativeAI (provides types.Content, types.Part)
 google-generativeai>=0.8.0
