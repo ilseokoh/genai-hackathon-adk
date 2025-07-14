@@ -35,7 +35,7 @@ This agent is using a Google Cloud Search for Commerce API. So you need to setup
     GOOGLE_CLOUD_PROJECT=<YOUR_PROJECT_ID>
     GOOGLE_CLOUD_LOCATION=us-central
     SEARCH_SERVING_CONFIG_ID=test-search-config
-    MODEL=gemini-2.0-flash-001
+    MODEL=gemini-2.5-flash
     ```
 1. start with Dev UI(adk web)
     Run the following command to launch the developer Web UI.

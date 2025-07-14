@@ -3,11 +3,11 @@ from google.adk.agents import Agent
 from google.adk.tools import google_search
 
 # Configuration
-model = os.environ.get("MODEL", "gemini-2.0-flash-001")
+model = os.environ.get("MODEL", "gemini-2.5-flash")
 
 product_question = Agent(
     name="product_question",
-    model="gemini-2.0-flash",
+    model=model,
     description="A agent to ask the general question about a specific product.",
     instruction="""
     You are a helpful assistant that can answer the general product question.

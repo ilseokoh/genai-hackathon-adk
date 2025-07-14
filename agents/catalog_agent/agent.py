@@ -7,6 +7,7 @@ from google.adk.agents import Agent
 from google.adk.agents.callback_context import CallbackContext
 from google.genai import types  # Content and Part are imported from here
 from google.adk.tools.agent_tool import AgentTool
+from google.adk.tools import google_search
 
 from .prompt import return_instructions_root
 from .tools import call_catalog_search
@@ -18,7 +19,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Configuration
-model = os.environ.get("MODEL", "gemini-2.0-flash-001")
+model = os.environ.get("MODEL", "gemini-2.5-flash")
 
 
 def extract_user_input(callback_context: CallbackContext) -> str:
